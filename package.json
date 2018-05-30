@@ -18,6 +18,7 @@
         "passport-google-oauth": "~1.0.0",
         "passport-local": "~1.0.0",
         "passport-twitter": "~1.0.4",
-        "quagga": "^0.12.1"
+        "quagga": "^0.12.1",
+        "webrtc-adapter": "^6.2.1"
     }
 }

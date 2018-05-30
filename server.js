@@ -5,6 +5,7 @@ const port = process.env.PORT || 8080;
 const mongoose = require('mongoose');
 const passport = require('passport');
 const flash = require('connect-flash');
+const adapter = require('webrtc-adapter');
 
 const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
