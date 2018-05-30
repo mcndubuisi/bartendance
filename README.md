@@ -8,7 +8,7 @@ Bartendance is a web application that takes down students’ attendance using ba
 
 The barcode, location and timestamp column in the attendance sheet will serve as proof that the student scanned the appropriate barcode and indeed attended the required class.
 
-### Demo
+## Demo
 ![Bartendance Logo](public/demo-scanner.png)
 <br><br>
 ## Installation
