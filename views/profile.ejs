@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title></title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+      <style>
+         /* In order to place the tracking correctly */
+         canvas.drawing, canvas.drawingBuffer {
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         .alert {
+         padding: 20px;
+         background-color: #4CAF50;
+         color: white;
+         }
+         .closebtn {
+         margin-left: 15px;
+         color: white;
+         font-weight: bold;
+         float: right;
+         font-size: 22px;
+         line-height: 20px;
+         cursor: pointer;
+         transition: 0.3s;
+         }
+         .closebtn:hover {
+         color: black;
+         }
+      </style>
+   </head>
+   <body onLoad="getLocation();">
+      <span style="display: none" id="userLocalStudentID"><%= user.local.studentID %></span>
+      <!-- Audio played on barcode detection -->
+      <audio id="censor">
+         <source src="beep.ogg" type="audio/ogg">
+         <source src="beep.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio>
+      <!-- Form sent to google spreadsheets -->
+      <form id="attendance">
+         <input id="studentID" name="studentID" type="hidden">
+         <input id="barcode" name="barcode" type="hidden">
+         <input id="location" name="location" type="hidden">
+         <div id="success"></div>
+         <button type="submit" id="send" style="display: none">Send</button>
+      </form>
+      <!-- Barcode scanner container -->
+      <div class="container">
+         <div id="alert"></div>
+         <div id="interactive" class="viewport">
+            <video autoplay="true" preload="auto"></video>
+         </div>
+         <button type="submit" id="btn">Start/Stop the scanner</button>
+      </div>
+      <!-- Scripts -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="https://cdn.rawgit.com/serratus/quaggaJS/0420d5e0/dist/quagga.min.js"></script>
+      <script src="main.js"></script>
+      <script src='google-sheet.js'></script>
+   </body>
+</html>
