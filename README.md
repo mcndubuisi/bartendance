@@ -10,7 +10,8 @@ The barcode, location and timestamp column in the attendance sheet will serve as
 <br><br>
 ## Demo
 ![Bartendance Logo](public/demo-scanner.png)
-Link to attendance sheet: (http://bit.ly/bartendance)
+<br>
+Link to attendance sheet: http://bit.ly/bartendance 
 <br><br>
 ## Installation
 
