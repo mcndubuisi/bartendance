@@ -33,7 +33,7 @@ app.use(express.static(__dirname + '/public'));
 
 // required for passport
 app.use(session({
-    secret: 'ilovescotchscotchyscotchscotch', // session secret
+    secret: 'mcndubuisibartendance', // session secret
     resave: true,
     saveUninitialized: true
 }));
